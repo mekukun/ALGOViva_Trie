@@ -9,10 +9,12 @@ class Trie:
             cur = cur[ch]
         # '*' indicates the end of the word
         cur['*'] = word
+        print(word,"has been added to the trie.")
 
     def searchIn(self, word):
         word_notfound = True
         cur = self.head
+        print("Searching...")
         for ch in word:
             if ch in cur:
                 cur = cur[ch]
