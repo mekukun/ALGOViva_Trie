@@ -23,8 +23,6 @@ class Trie:
                 # re-check when cursor at root        
                 if ch in cur:
                     cur = cur[ch]
-                else:
-                    cur = self.head
 
             if '*' in cur:
                 print(cur['*'],"-- spotted")
