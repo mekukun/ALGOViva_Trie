@@ -35,10 +35,7 @@ class Trie:
             print("There are no word found")
 
 # main program
-enterInput = input("Enter a string: ")
-wordArray = [str(x) for x in input("Enter the words you want to search in the string (, seperated):\n").split(', ')]
-
 tree = Trie()
-for word in wordArray:
-    tree.add(word)
-tree.searchIn(enterInput)
+tree.add("fun")
+tree.add("algo")
+tree.searchIn("algorisfunalgoisgreat")
